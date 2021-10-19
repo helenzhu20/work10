@@ -10,6 +10,14 @@ int main() {
     struct pokemon *oddish = insert_front(pidgey, "oddish", pokeggroups[1]); 
 
     print_list(oddish);
+
+    printf("\nremove pidgey:\n");
+    struct pokemon *rp = remove_pokemon(oddish, "pidgey");
+    print_list(rp);
+
+    printf("\nremove eevee:\n");
+    struct pokemon *re = remove_pokemon(oddish, "eevee");
+    print_list(re);
     
     free_list(oddish);
     
